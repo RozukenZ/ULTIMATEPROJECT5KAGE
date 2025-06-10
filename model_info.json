@@ -1,0 +1,11 @@
+{
+  "model_name": "umm-informatics-assistantv2.0",
+  "created_at": "2025-06-08T18:08:04.626227",
+  "training_data_size": 2664,
+  "base_model": "llama3.2",
+  "purpose": "UMM Informatics Virtual Assistant with Modern Professional Style",
+  "institution": "Universitas Muhammadiyah Malang - Informatics Department",
+  "version": "1.0",
+  "language": "English",
+  "style": "Professional + Contemporary + Academic"
+}

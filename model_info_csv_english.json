@@ -1,0 +1,14 @@
+{
+  "model_name": "umm-informatics-csv-englishv2",
+  "created_at": "2025-06-08T19:02:53.969313",
+  "csv_file_used": "NewBrain.csv",
+  "training_data_entries": 2664,
+  "base_model": "llama3.2",
+  "purpose": "UMM Informatics Assistant with CSV Knowledge Base",
+  "institution": "Universitas Muhammadiyah Malang - Informatics Department",
+  "version": "2.0",
+  "language": "English",
+  "knowledge_source": "CSV Dataset",
+  "template_format": "ChatML",
+  "optimization": "Enhanced for CSV knowledge retention"
+}
