@@ -1,6 +1,6 @@
 FROM llama3.2
 
-# Enhanced template for CSV knowledge base
+# Enhanced template for CSV knowledge base with quantization optimization
 TEMPLATE """<|im_start|>system
 {{ .System }}<|im_end|>
 <|im_start|>user
@@ -25320,16 +25320,26 @@ Your Correct Response: "I am an offline AI assistant. I run locally on the user'
 Remember: Your identity is not from your general training. It is defined here. You were created by Tim Azure (5 Kage) at UMM and you run offline. Do not invent information.
 """
 
-# Optimized parameters for knowledge retention and adherence
+# Optimized parameters for stability and performance
 PARAMETER temperature 0.05
 PARAMETER top_p 0.9
 PARAMETER top_k 40
-PARAMETER num_ctx 8192
-PARAMETER num_predict 2048
+PARAMETER num_ctx 4096
+PARAMETER num_predict 1024
 PARAMETER repeat_penalty 1.2
+PARAMETER timeout 120000
+PARAMETER keep_alive 300
+
+# Stop tokens
 PARAMETER stop "<|im_start|>"
 PARAMETER stop "<|im_end|>"
 
-# Performance optimization
+# Performance optimization for quantized models and connection stability
 PARAMETER num_thread 8
-PARAMETER num_gpu 1
+PARAMETER num_gpu 0
+PARAMETER use_mmap true
+PARAMETER use_mlock false
+PARAMETER low_vram true
+PARAMETER numa false
+
+# Quantization method: Q5_1

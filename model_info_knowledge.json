@@ -1,8 +1,8 @@
 {
   "model_name": "umm-informatics-knowledgev7",
-  "created_at": "2025-06-10T08:06:54.447410",
+  "created_at": "2025-06-11T08:26:16.887616",
   "csv_file_used": "NewBrain.csv",
-  "knowledge_entries": 3249,
+  "knowledge_entries": 8426,
   "base_model": "llama3.2",
   "purpose": "UMM Informatics Assistant with Embedded CSV Knowledge Base",
   "institution": "Universitas Muhammadiyah Malang - Informatics Department",
